@@ -1,3 +1,18 @@
+/*
+EXPERIMENT 6: MEMORY OPTIMIZATION IN CUDA
+
+Title:
+CUDA Implementation of Memory Optimization Using
+Coalesced Matrix Transpose and Naive Matrix Multiplication
+
+GPU: NVIDIA Tesla T4
+CUDA Toolkit: 13.0
+
+Kernels Implemented:
+1. Uncoalesced Matrix Transpose
+2. Coalesced Matrix Transpose using Shared Memory
+3. Naive Matrix Multiplication
+*/
 
 #include <cstdio>
 #include <cstdlib>
