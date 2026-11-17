@@ -1,0 +1,31 @@
+============================================
+ EXPERIMENT 6: MEMORY OPTIMIZATION IN CUDA
+============================================
+GPU: Tesla T4
+Compute Capability: 7.5
+
+============================================
+ PART A: MATRIX TRANSPOSE (N = 4096)
+============================================
+Uncoalesced :    2.548 ms |    52.7 GB/s | PASS
+Coalesced   :    0.744 ms |   180.5 GB/s | PASS
+Speedup (uncoalesced / coalesced) = 3.43x
+
+============================================
+ PART B: NAIVE MATRIX MULTIPLICATION (N = 1024)
+============================================
+Naive matmul:    8.809 ms |   243.8 GFLOPS | PASS
+
+============================================
+ EXPERIMENT 6 SUMMARY
+============================================
+Transpose uncoalesced : 2.548 ms
+Transpose coalesced   : 0.744 ms
+Naive matmul          : 8.809 ms
+
+Result verification:
+Uncoalesced transpose : PASS
+Coalesced transpose   : PASS
+Naive matrix multiply : PASS
+
+Experiment 6 completed.
